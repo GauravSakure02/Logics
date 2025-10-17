@@ -5,6 +5,7 @@ public class Main1 {
 
     public static void main(String[] args) {
         //check(5,12,7);
+        triangle(1,2,10);
     }
 
 
@@ -20,5 +21,14 @@ public class Main1 {
        }
     }
 
+
+
+    // This line uses a nested ternary operator: the outer one checks for validity,
+    // and the inner one (if the triangle is valid) classifies it.
+    static void triangle(int a,int b,int c){
+        String result = (a+b>c && b+c >a && a+c >b) ?
+                (a==b && b==c ? "Valid Equilateral" : (a==b || b==c || a==c ? "Valid Isosceles" : " Valid Scaeles")) : "Invalid Triangle";
+        System.out.println(result);
+    }
 
 }
