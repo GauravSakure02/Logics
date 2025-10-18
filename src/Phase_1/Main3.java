@@ -8,7 +8,11 @@ public class Main3 {
         //checkMiddle(101);
         //checkExtreme(100);
         //absolute(100);
-        seven(10);
+        //seven(10);
+        //coordinates(-10,10);
+        notes(1500);
+
+
     }
 
     static void checkDistinct(int num){
@@ -82,6 +86,47 @@ public class Main3 {
             System.out.println("The number is either a multiple of 7 or ends with 7");
         }else{
             System.out.println("The number is neither a multiple of 7 nor ends with 7");
+        }
+    }
+
+    /**
+     * Determines the location of a point (x, y) on a Cartesian plane.
+     */
+    static void coordinates(int x, int y) {
+        // --- LOGIC ---
+        // The structure correctly checks the most specific cases (origin, axes) first
+        // before moving to the broader quadrant checks.
+
+        if (x == 0 && y == 0) {
+            System.out.println("The point is at the Origin (0,0).");
+        } else if (x == 0) {
+            System.out.println("The point lies on the Y-axis.");
+        } else if (y == 0) {
+            System.out.println("The point lies on the X-axis.");
+        } else if (x > 0 && y > 0) {
+            System.out.println("Quadrant I (+,+)");
+        } else if (x < 0 && y > 0) {
+            System.out.println("Quadrant II (-,+)");
+        } else if (x < 0 && y < 0) {
+            System.out.println("Quadrant III (-,-)");
+        } else { // This is the only remaining possibility (x > 0 and y < 0)
+            System.out.println("Quadrant IV (+,-)");
+        }
+    }
+
+    /**
+     * Checks if an amount can be formed using notes of 100, 500, and 2000.
+     */
+    static void notes(int amt) {
+        // --- LOGIC ---
+        // Since 100 is the smallest denomination, any valid amount must be
+        // a multiple of 100. Also, the amount cannot be negative.
+        // This single if-condition handles both checks efficiently.
+
+        if (amt < 0 || amt % 100 != 0) {
+            System.out.println("The amount cannot be formed by these notes.");
+        } else {
+            System.out.println("Yes, the amount can be formed by these notes.");
         }
     }
 }
