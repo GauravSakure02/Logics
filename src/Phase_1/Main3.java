@@ -10,8 +10,10 @@ public class Main3 {
         //absolute(100);
         //seven(10);
         //coordinates(-10,10);
-        notes(1500);
-
+        //notes(1500);
+        //numberinrange(100);
+        //angle(60,60);
+        square(25);
 
     }
 
@@ -128,5 +130,52 @@ public class Main3 {
         } else {
             System.out.println("Yes, the amount can be formed by these notes.");
         }
+    }
+
+    static void numberinrange(int n){
+        if(n< 100||n>999){
+            System.out.println("Number out of range");
+        }else{
+            System.out.println("Number between 100 and 999");
+        }
+    }
+
+    static void angle(double n, double r) {
+        // --- OPTIMIZATION ---
+        // Handle invalid cases first and `return` to exit the method early.
+        // This avoids nesting the main logic inside an `else` block.
+        if (n <= 0 || r <= 0 || (n + r >= 180)) {
+            System.out.println("Invalid angles. The two angles cannot form a valid triangle.");
+            return;
+        }
+
+        double third = 180 - (n + r);
+        System.out.println("The third angle is " + third);
+    }
+
+    static void square(int n) {
+        // --- FIX & OPTIMIZATION ---
+        // 1. Handle the negative case first and return.
+        if (n < 0) {
+            System.out.println(n + " is not a perfect square (cannot be negative).");
+            return;
+        }
+
+        // 2. The loop will correctly handle 0 and 1.
+        // 3. Remove the `isFound` flag. If we find the answer,
+        //    we can print and return immediately.
+
+        // Loop from i=0 to avoid missing the n=0 case.
+        // The condition `i * i <= n` is efficient because it stops
+        // the search once the square of i exceeds n.
+        for (long i = 0; i * i <= n; i++) {
+            if (i * i == n) {
+                System.out.println(n + " is a perfect square.");
+                return; // Found it, exit the method.
+            }
+        }
+
+        // If the loop finishes without finding a match, then it's not a perfect square.
+        System.out.println(n + " is not a perfect square.");
     }
 }
