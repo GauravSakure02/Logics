@@ -6,6 +6,7 @@ public class Main {
 
         //printnos();
         //printodd();
+        printeven();
     }
 
 
