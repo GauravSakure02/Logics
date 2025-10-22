@@ -10,7 +10,6 @@ public class Main5 {
         //geometric(1,2,4);
         //checkDigitSum(122);
         //ompareSumAndProduct(101);
-        //compareDates(1,2,3,4);
         //printCentury(2001);
 
 
