@@ -11,8 +11,8 @@ public class Main2 {
         //perfectno(28);
         //System.out.println(prime(10));
         //printPrime();
-        fib(10);
-
+        //fib(10);
+        //sum(10);
 
 
     }
@@ -179,5 +179,27 @@ public class Main2 {
             b = nextfib;
         }
         System.out.println(); // Add a newline at the end for clean output
+    }
+
+    static void sum(int n){
+        if(n<=0){
+            System.out.println("Enter positive no");
+            return;
+        }
+        int a=0,b=1;
+        int sum = a;
+        System.out.print(a);
+        if(n==1) return;
+        System.out.print(" ," +b);
+        if(n==2) return;
+
+        for(int i=3;i<=n;i++){
+            int nextfib = a+b;
+            System.out.print(", " + nextfib);
+            sum += nextfib;
+            a=b;
+            b=nextfib;
+        }
+        System.out.println("\nSum is - "+ sum);
     }
 }
