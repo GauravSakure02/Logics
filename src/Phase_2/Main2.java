@@ -11,7 +11,7 @@ public class Main2 {
         //perfectno(28);
         //System.out.println(prime(10));
         //printPrime();
-
+        fib(10);
 
 
 
@@ -153,5 +153,31 @@ public class Main2 {
                 System.out.println(i+" is not a prime number.");
             }
         }
+    }
+
+    static void fib(int n) {
+        if (n <= 0) {
+            System.out.println("Please enter a positive number of terms.");
+            return;
+        }
+        int a = 0, b = 1;
+
+        System.out.print(a); // Print the first term (0)
+
+        if (n == 1) return; // Stop if only 1 term is needed
+
+        System.out.print(", " + b); // Print the second term (1)
+
+        if (n == 2) return; // Stop if only 2 terms are needed
+
+        // Loop from the 3rd term up to the nth term
+        for (int i = 3; i <= n; i++) {
+            int nextfib = a + b;
+            System.out.print(", " + nextfib); // *** Added this line to print ***
+            // Update a and b for the next iteration
+            a = b;
+            b = nextfib;
+        }
+        System.out.println(); // Add a newline at the end for clean output
     }
 }
