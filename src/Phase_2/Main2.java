@@ -181,25 +181,33 @@ public class Main2 {
         System.out.println(); // Add a newline at the end for clean output
     }
 
-    static void sum(int n){
-        if(n<=0){
+    static void sum(int n) {
+        if (n <= 0) {
             System.out.println("Enter positive no");
             return;
         }
-        int a=0,b=1;
-        int sum = a;
-        System.out.print(a);
-        if(n==1) return;
-        System.out.print(" ," +b);
-        if(n==2) return;
 
-        for(int i=3;i<=n;i++){
-            int nextfib = a+b;
-            System.out.print(", " + nextfib);
-            sum += nextfib;
-            a=b;
-            b=nextfib;
+        int a = 0, b = 1;
+        long sum = 0; // Use long to prevent overflow
+
+        if (n >= 1) {
+            sum += a; // Add the first term (0)
         }
-        System.out.println("\nSum is - "+ sum);
+
+        if (n >= 2) {
+            sum += b; // Add the second term (1)
+        }
+
+        // Loop starts from the 3rd term
+        for (int i = 3; i <= n; i++) {
+            int nextfib = a + b;
+            sum += nextfib; // Add the current term to the sum
+            // Update a and b for the next iteration
+            a = b;
+            b = nextfib;
+        }
+
+        // Print the final sum after the loop finishes
+        System.out.println("Sum of first " + n + " Fibonacci terms is: " + sum);
     }
 }
