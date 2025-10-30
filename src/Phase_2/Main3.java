@@ -12,7 +12,7 @@ public class Main3 {
         //sumoffactors(30);
         //strong(145);
         //ap(2,1,5);
-        gp(2,2,5);
+        //gp(2,2,5);
 
     }
 
