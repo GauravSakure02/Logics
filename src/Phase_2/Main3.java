@@ -8,6 +8,11 @@ public class Main3 {
         //seven(5,20);
         //hcf(1,0);
         //lcm(11,12);
+        //factors(30);
+        //sumoffactors(30);
+        //strong(145);
+        //ap(2,1,5);
+        gp(2,2,5);
 
     }
 
@@ -111,5 +116,70 @@ public class Main3 {
         long lcmResult = product / hcfResult;
 
         System.out.println("LCM is - " + lcmResult);
+    }
+
+
+    static void factors(int n){
+        System.out.println("The factors of " + n +"  are -");
+        for(int i=1;i<=n;i++){
+            if(n % i==0){
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println();
+    }
+
+    static void sumoffactors(int n){
+
+        long sum = 0;
+        for(int i=1;i<=n;i++){
+            if(n % i==0){
+                sum += i;
+            }
+        }
+        System.out.println("The sum is -"+ sum);
+    }
+
+    static int fact(int n){
+        if(n==0) return 1;
+        long fact = 1;
+        for(int i=n;i>0;i--){
+            fact = fact * i;
+        }
+        return (int)fact;
+    }
+
+
+    static void strong(int n){
+        int temp = n;
+        int sum = 0;
+        while(n>0){
+            int digit = n%10;
+            sum += fact(digit);
+            n /= 10;
+        }
+        if(sum==temp){
+            System.out.println(temp+" is a strong number");
+        }else{
+            System.out.println(temp+" is not a strong number");
+        }
+    }
+
+    static void ap(int a,int d,int n){
+        int current = a;
+        for(int i=1;i<=n;i++){
+            System.out.print(current+" ");
+            current += d;
+        }
+    }
+
+    static void gp(int a, int r, int n) {
+        long current = a;
+        for (int i = 1; i <= n; i++) {
+            // Changed from println to print to match the 'ap' method's output style
+            System.out.print(current + " ");
+            current *= r;
+        }
+        System.out.println(); // Add a final newline after the series is done
     }
 }
