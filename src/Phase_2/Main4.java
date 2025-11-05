@@ -62,14 +62,31 @@ public class Main4 {
         for(int i=1;i<=n;i++){
 
             //spaces
-            for(int j=1;i<=n-i-1;j++){
+            for(int j=1;j<=n-i;j++){
                 System.out.print(" ");
             }
 
             //stars
-            for(int k=1;k<=2*i+1;k++){
+            for(int k=1;k<=2*i-1;k++){
                 System.out.print("*");
             }
+            System.out.println();
+        }
+    }
+
+    static void six(int n){
+        for(int i=1;i<=n;i++){
+
+            //spaces
+            for(int j=1;j<=n-i;j++){
+                System.out.print("b");
+            }
+
+            //star
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+
             System.out.println();
         }
     }
@@ -80,7 +97,7 @@ public class Main4 {
         //two(5);
         //three(5);
         //four(5);
-
+        //five(5);
 
 
     }
