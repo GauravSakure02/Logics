@@ -23,16 +23,16 @@ public class Main4 {
     }
 
 
-    static void two(int n){
-        for(int i=1;i<=n;i++){
+    static void two(int n) {
+        for (int i = 1; i <= n; i++) {
 
-            //spaces
-            for(int j=1;j<=n-i-1;j++){
+            // Spaces (Corrected from n-i-1 to n-i)
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
 
-            //stars
-            for(int k=1;k<=i;k++){
+            // Stars
+            for (int k = 1; k <= i; k++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -44,5 +44,11 @@ public class Main4 {
     public static void main(String[] args) {
         //simple(4);
         //one(5);
+        two(5);
+
+
+
+
+
     }
 }
