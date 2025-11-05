@@ -23,6 +23,6 @@ public class Main4 {
     }
     public static void main(String[] args) {
         //simple(4);
-
+        one(5);
     }
 }
