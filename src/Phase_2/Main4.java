@@ -115,8 +115,8 @@ public class Main4 {
         //three(5);
         //four(5);
         //five(5);
-        six(5);
-
+        //six(5);
+        seven(5);
 
 
     }
