@@ -200,14 +200,16 @@ public class Main4 {
         for(int i=1;i<=n;i++){
 
             //spaces
-            for(int j=1;i<=(n-i);j++){
+            for(int j=1;j<=(n-i);j++){
                 System.out.print(" ");
             }
 
             //alpha
             for(int j=1;j<=(2*i-1);j++){
-                System.out.print(ch+" ");
-                ch++;
+                if (ch <= 'Z') {
+                    System.out.print(ch);
+                    ch++;
+                }
             }
             System.out.println();
         }
@@ -231,6 +233,10 @@ public class Main4 {
         //thirteen(5);
         //fourteen(26);
         //fifteen(26);
+        sixteen(6);
+
+
+
 
     }
 }
