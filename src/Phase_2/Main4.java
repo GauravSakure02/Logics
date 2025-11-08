@@ -149,7 +149,15 @@ public class Main4 {
         }
     }
 
-
+    static void twelve(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                int val = ((i+j+1)%2);
+                System.out.print(val+" ");
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         //simple(4);
@@ -163,7 +171,7 @@ public class Main4 {
         //eight(5);
         //nine(5);
         //ten(7);
-        eleven(5);
+        //eleven(5);
 
 
 
