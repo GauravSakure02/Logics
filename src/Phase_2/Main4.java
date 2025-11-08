@@ -127,6 +127,17 @@ public class Main4 {
         }
     }
 
+    static void ten(int n){
+        int num =1;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print((num% 10)+" ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         //simple(4);
         //one(5);
@@ -138,7 +149,7 @@ public class Main4 {
         //seven(5);
         //eight(5);
         //nine(5);
-
+        ten(7);
 
 
     }
