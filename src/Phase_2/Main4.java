@@ -197,7 +197,9 @@ public class Main4 {
         //ten(7);
         //eleven(5);
         //twelve(5);
-        thirteen(5);
+        //thirteen(5);
+        fourteen(26);
+
 
     }
 }
