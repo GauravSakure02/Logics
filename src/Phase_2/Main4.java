@@ -165,12 +165,22 @@ public class Main4 {
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
                 System.out.print(ch+" ");
+                ch++;
             }
             System.out.println();
         }
     }
 
 
+    static void fourteen(int n){
+        for(int i=0;i<n;i++){
+            char ch = (char)('A'+i);
+            for(int j=0;j<=i;j++){
+                System.out.print(ch+" ");
+            }
+            System.out.println();
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -187,7 +197,7 @@ public class Main4 {
         //ten(7);
         //eleven(5);
         //twelve(5);
-
+        thirteen(5);
 
     }
 }
