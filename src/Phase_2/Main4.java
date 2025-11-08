@@ -195,6 +195,25 @@ public class Main4 {
     }
 
 
+    static void sixteen(int n){
+        char ch = 'A';
+        for(int i=1;i<=n;i++){
+
+            //spaces
+            for(int j=1;i<=(n-i);j++){
+                System.out.print(" ");
+            }
+
+            //alpha
+            for(int j=1;j<=(2*i-1);j++){
+                System.out.print(ch+" ");
+                ch++;
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void main(String[] args) {
         //simple(4);
         //one(5);
@@ -211,7 +230,7 @@ public class Main4 {
         //twelve(5);
         //thirteen(5);
         //fourteen(26);
-        fifteen(26);
+        //fifteen(26);
 
     }
 }
