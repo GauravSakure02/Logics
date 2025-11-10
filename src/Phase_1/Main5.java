@@ -13,6 +13,8 @@ public class Main5 {
         //printCentury(2001);
 
 
+        
+
     }
 
     public static void pythagoras(int a,int b,int c){
