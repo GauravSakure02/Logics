@@ -14,7 +14,6 @@ public class Main5 {
 
 
         
-
     }
 
     public static void pythagoras(int a,int b,int c){
