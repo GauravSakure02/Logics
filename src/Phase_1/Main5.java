@@ -12,7 +12,6 @@ public class Main5 {
         //ompareSumAndProduct(101);
         //printCentury(2001);
 
- 
     }
 
     public static void pythagoras(int a,int b,int c){
