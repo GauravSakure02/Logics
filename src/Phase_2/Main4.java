@@ -216,17 +216,6 @@ public class Main4 {
     }
 
 
-
-    static void seventeen(int n){
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-                System.out.print(j);
-            }
-            System.out.println();
-        }
-    }
-
-
     public static void main(String[] args) {
         //simple(4);
         //one(5);
@@ -244,8 +233,8 @@ public class Main4 {
         //thirteen(5);
         //fourteen(26);
         //fifteen(26);
-        //sixteen(6);
-        seventeen(5);
+        sixteen(6);
+
 
 
 
