@@ -215,6 +215,26 @@ public class Main4 {
         }
     }
 
+    static void eighteen(int n){
+        for(int i=1;i<=n;i++){
+
+            //spaces
+            for(int j=i;j<=n;j++){
+                System.out.print(" ");
+            }
+
+            //leading digit
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+
+            //trailing digits
+            for(int j=i-1;j>=1;j--){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         //simple(4);
@@ -233,7 +253,7 @@ public class Main4 {
         //thirteen(5);
         //fourteen(26);
         //fifteen(26);
-        sixteen(6);
+        //sixteen(6);
 
 
 
