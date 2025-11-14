@@ -284,6 +284,28 @@ public class Main4 {
         }
     }
 
+
+    static void twone(int n){
+        for(int i=1;i<=n;i++){
+            //leading spaces
+            for(int j=i;j<n;j++){
+                System.out.print(" ");
+            }
+
+            //drecresing no
+            for(int j=5;j<5-i;j--){
+                System.out.print(j);
+            }
+
+            //increasing no
+            for(int j=5-i+1;j<=5;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void main(String[] args) {
         //simple(4);
         //one(5);
@@ -304,7 +326,7 @@ public class Main4 {
         //sixteen(6);
         //eighteen(5);
         //nineteen(5);
-        twenteen(4);
+        //twenteen(4);
 
     }
 }
