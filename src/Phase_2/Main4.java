@@ -293,7 +293,7 @@ public class Main4 {
             }
 
             //drecresing no
-            for(int j=5;j<5-i;j--){
+            for(int j=5;j>5-i;j--){
                 System.out.print(j);
             }
 
@@ -327,6 +327,6 @@ public class Main4 {
         //eighteen(5);
         //nineteen(5);
         //twenteen(4);
-
+        twone(5);
     }
 }
