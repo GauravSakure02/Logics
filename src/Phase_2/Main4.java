@@ -254,6 +254,36 @@ public class Main4 {
         }
     }
 
+    static void twenteen(int n){
+        //upper
+        for(int i=1;i<=n;i++){
+            //spaces
+            for(int j=i;j<n;j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=(2*i-1);j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //lower part
+        for(int i=n-1;i>=1;i--){
+
+            //spaces
+            for(int j=n;j>i;j--){
+                System.out.print(" ");
+            }
+
+            //stars
+            for(int j=1;j<=(2*i-1);j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         //simple(4);
         //one(5);
@@ -273,8 +303,8 @@ public class Main4 {
         //fifteen(26);
         //sixteen(6);
         //eighteen(5);
-        nineteen(5);
-
+        //nineteen(5);
+        twenteen(4);
 
     }
 }
