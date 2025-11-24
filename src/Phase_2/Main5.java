@@ -53,6 +53,16 @@ public class Main5 {
 
     }
 
+    static int  digitsum(int n){
+            int sum =0;
+            int temp =n;
+            while(temp>0){
+                int last = temp % 10;
+                sum += last;
+                temp /= 10;
+            }
+            return sum;
+    }
 
         public static void main(String[] args) {
             /*for (int i = 1; i <= 100; i++) {
@@ -66,8 +76,14 @@ public class Main5 {
                 System.out.println(i+"-"+palindrome(i));
             }*/
 
-            div();
+            //div();
 
+            for(int i=1;i<=100;i++){
+                int sum = digitsum(i);
+                if(sum % 3==0){
+                    System.out.println(i+"-"+sum);
+                }
+            }
         }
     }
 
