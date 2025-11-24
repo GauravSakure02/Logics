@@ -84,6 +84,7 @@ public class Main5 {
                     System.out.println(i+"-"+sum);
                 }
             }
+
         }
     }
 
