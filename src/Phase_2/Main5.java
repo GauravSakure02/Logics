@@ -64,6 +64,25 @@ public class Main5 {
             return sum;
     }
 
+
+    static void largestsmallest(String n) {
+        int min = 9;
+        int max = 0;
+
+        // Loop through every character in the string
+        for (int i = 0; i < n.length(); i++) {
+            // Convert character to integer number (char '0' is ASCII 48)
+            int digit = n.charAt(i) - '0';
+
+            if (digit > max) {
+                max = digit;
+            }
+            if (digit < min) {
+                min = digit;
+            }
+        }
+        System.out.println("Smallest - " + min + " Largest - " + max);
+    }
         public static void main(String[] args) {
             /*for (int i = 1; i <= 100; i++) {
                 int digitSum = calculateDigitSum(i);
@@ -78,13 +97,15 @@ public class Main5 {
 
             //div();
 
-            for(int i=1;i<=100;i++){
+            /*for(int i=1;i<=100;i++){
                 int sum = digitsum(i);
-                if(sum % 3==0){
+                if(sum % 3==0){'
                     System.out.println(i+"-"+sum);
                 }
-            }
+            }*/
 
+
+            largestsmallest("0001");
         }
     }
 
