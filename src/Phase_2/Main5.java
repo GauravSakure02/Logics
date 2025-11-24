@@ -83,6 +83,10 @@ public class Main5 {
         }
         System.out.println("Smallest - " + min + " Largest - " + max);
     }
+
+
+
+
         public static void main(String[] args) {
             /*for (int i = 1; i <= 100; i++) {
                 int digitSum = calculateDigitSum(i);
