@@ -27,7 +27,7 @@ public class Main1 {
     }
 
     static void printodd(int n){
-        if(n<2) return;
+        if(n<1) return;
 
         printodd(n-1);
         if(n % 2 != 0){
@@ -38,7 +38,8 @@ public class Main1 {
     public static void main(String[] args) {
         //print1_n(10);
         //printn_1(10);
-        printeven(10);
+        //printeven(10);
+        printodd(10);
 
     }
 }
