@@ -148,7 +148,7 @@ public class Main5 {
 
             //largestsmallest("0001");
             //printevenbits(20);
-            pattern(5);
+            //pattern(5);
         }
     }
 
