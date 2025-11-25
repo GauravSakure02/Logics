@@ -84,7 +84,7 @@ public class Main5 {
         System.out.println("Smallest - " + min + " Largest - " + max);
     }
 
-    static void printevenbits(int n){
+    /*static void printevenbits(int n){
         System.out.println("Numbers from 1 to " + n + " with even 1s:");
         for(int i=1;i<=n;i++){
             if(hasevenbits(i)){
@@ -93,7 +93,7 @@ public class Main5 {
 
         }
         System.out.println();
-    }
+    }*/
 
     static boolean hasevenbits(int n){
             int count = 0;
@@ -105,6 +105,15 @@ public class Main5 {
             }
             return count % 2==0;
     }
+
+    static void printevenbits(int n){
+            for(int i=1;i<=n;i++){
+                if(Integer.bitCount(i)% 2==0){
+                    System.out.print(i+" ");
+                }
+            }
+    }
+
 
         public static void main(String[] args) {
             /*for (int i = 1; i <= 100; i++) {
