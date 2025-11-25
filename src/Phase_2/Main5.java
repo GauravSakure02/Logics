@@ -114,6 +114,15 @@ public class Main5 {
             }
     }
 
+    static void pattern(int n){
+        for(int i=1;i<=n;i++){
+            int sq = i*i;
+            for(int j=1;j<=i;j++){
+                System.out.print(sq+" ");
+            }
+            System.out.println();
+        }
+    }
 
         public static void main(String[] args) {
             /*for (int i = 1; i <= 100; i++) {
@@ -138,7 +147,8 @@ public class Main5 {
 
 
             //largestsmallest("0001");
-            printevenbits(20);
+            //printevenbits(20);
+            pattern(5);
         }
     }
 
