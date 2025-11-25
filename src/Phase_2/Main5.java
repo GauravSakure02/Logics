@@ -124,6 +124,40 @@ public class Main5 {
         }
     }
 
+
+    static void fact(int n){
+        long fac = 1;
+        for(int i=1;i<=n;i++){
+            fac = fac*i;
+            System.out.println("The factorial of "+ i +" is - "+ fac);
+        }
+    }
+
+        static void evnoddsum(int n){
+            int even =0,odd=0;
+            n=Math.abs(n);
+            int temp = n;
+            while(temp>0){
+                int digit = temp % 10;
+                if(digit % 2==0){
+                    even += digit;
+                }
+                if(digit % 2 !=0){
+                    odd += digit;
+                }
+                temp /= 10;
+            }
+
+            System.out.println("Sum of Even Digits: " + even);
+            System.out.println("Sum of Odd Digits: " + odd);
+
+        }
+
+
+
+
+
+
         public static void main(String[] args) {
             /*for (int i = 1; i <= 100; i++) {
                 int digitSum = calculateDigitSum(i);
@@ -149,6 +183,10 @@ public class Main5 {
             //largestsmallest("0001");
             //printevenbits(20);
             //pattern(5);
+            //fact(5);
+            evnoddsum(123456);
+
+
         }
     }
 
