@@ -1,5 +1,7 @@
 package Phase_2;
 
+import java.util.Scanner;
+
 public class Main5 {
 
         public static int calculateDigitSum(int n) {
@@ -184,7 +186,27 @@ public class Main5 {
             //printevenbits(20);
             //pattern(5);
             //fact(5);
-            evnoddsum(123456);
+            //evnoddsum(123456);
+
+
+            Scanner scanner = new Scanner(System.in);
+            int sum = 0;
+
+            System.out.println("Enter 5 numbers:");
+
+            for (int i = 1; i <= 5; i++) {
+                System.out.print("Number " + i + ": ");
+                int number = scanner.nextInt();
+
+                // If the user enters 0, skip adding it
+                if (number == 0) {
+                    continue;
+                }
+
+                sum += number;
+            }
+
+            System.out.println("Sum of all non-zero numbers: " + sum);
 
 
         }
