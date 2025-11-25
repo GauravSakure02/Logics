@@ -17,9 +17,28 @@ public class Main1 {
         printn_1(n-1);
     }
 
+    static void printeven(int n){
+        if(n<2) return;
+
+        printeven(n-1);
+        if(n % 2==0){
+            System.out.println(n);
+        }
+    }
+
+    static void printodd(int n){
+        if(n<2) return;
+
+        printodd(n-1);
+        if(n % 2 != 0){
+            System.out.println(n);
+        }
+    }
 
     public static void main(String[] args) {
         //print1_n(10);
         //printn_1(10);
+        printeven(10);
+
     }
 }
