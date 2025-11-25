@@ -19,7 +19,7 @@ public class Main1 {
 
 
     public static void main(String[] args) {
-        print1_n(10);
+        //print1_n(10);
         printn_1(10);
     }
 }
